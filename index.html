@@ -3,20 +3,20 @@
     <head>
         <script src="./oi.hexmap.min.js"></script>
         <style>
-            #hexmap1 { height: 500px; width: 100%; animation-duration: 0.3s; }
-            #hexmap1 .hex path { stroke: white; stroke-width: 2; transition: fill 0.3s ease-in, stroke 0.3s ease-in, stroke-width 0.3s ease-in; }
+            #hexmap { height: 500px; width: 100%; animation-duration: 0.3s; }
+            #hexmap .hex path { stroke: white; stroke-width: 2; transition: fill 0.3s ease-in, stroke 0.3s ease-in, stroke-width 0.3s ease-in; }
             /* Make the hexagon larger when hovered */
-            #hexmap1 .hover path { stroke-width: 4px; transform: scale(1.75); stroke: black; }
-            #hexmap1 .hex-label { font-size: 1rem; line-height: 1.1em; }
+            #hexmap .hover path { stroke-width: 4px; transform: scale(1.75); stroke: black; }
+            #hexmap .hex-label { font-size: 1rem; line-height: 1.1em; }
             /* Set the on and off styles for the text labels */
-            #hexmap1 .hex-label tspan.on { display: none; }
-            #hexmap1 .hex-label tspan.off { display: block; }
-            #hexmap1 .hex-label tspan.big { font-weight: bold; font-size: 1.2em; }
-            #hexmap1 .hover .hex-label tspan.on { display: block; }
-            #hexmap1 .hover .hex-label tspan.off { display: none; }
+            #hexmap .hex-label tspan.on { display: none; }
+            #hexmap .hex-label tspan.off { display: block; }
+            #hexmap .hex-label tspan.big { font-weight: bold; font-size: 1.2em; }
+            #hexmap .hover .hex-label tspan.on { display: block; }
+            #hexmap .hover .hex-label tspan.off { display: none; }
         </style>
         <script>
-            hex = new OI.hexmap(document.getElementById('hexmap2'),{
+            hex = new OI.hexmap(document.getElementById('hexmap'),{
                 'grid': {'show':true},
                 'label':{
                     'show': true,	// Show a label
@@ -85,7 +85,7 @@
     </head>
     <body>
         <figure>
-            <div id="hexmap1"></div>
+            <div id="hexmap"></div>
             <figcaption>Earth 2349</figcaption>
         </figure>
     </body>
